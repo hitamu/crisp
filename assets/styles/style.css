@@ -1448,3 +1448,9 @@ pre code {
   background: #2bbc8a;
   font-size: 12px;
 }
+.image-div > img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+}
