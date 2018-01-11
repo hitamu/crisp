@@ -1440,3 +1440,6 @@ pre code {
 .highlight .line {
   height: 22px;
 }
+.taglist a {
+  background: #b3b3b3;
+}
