@@ -1441,5 +1441,10 @@ pre code {
   height: 22px;
 }
 .taglist a {
-  background: #b3b3b3;
+  background: antiquewhite;
+  font-size: 12px;
+}
+.taglist a:hover {
+  background: #2bbc8a;
+  font-size: 12px;
 }
