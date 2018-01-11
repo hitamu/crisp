@@ -9,9 +9,9 @@
   <meta name="description" content="{{meta_description}}" />
   <link rel="shortcut icon" href="{{@blog.logo}}" />
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
   <link rel="stylesheet" type="text/css" href="{{asset '/styles/justifiedGallery.min.css'}}">
   <link rel="stylesheet" type="text/css" href="{{asset '/styles/style.css'}}">
+  <link rel="stylesheet" type="text/css" href="{{asset '/styles/solarized-light.css'}}">
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +26,7 @@
 <body class="{{body_class}}">
   <div class="content index width mx-auto px2 my4">
     <header id="header">
+      <div id="logo" style="background-image: url({{@blog.logo}});"></div>
       <h1>
         <div id="title">
           <a href="{{@blog.url}}">{{@blog.title}}</a>
@@ -59,7 +60,10 @@
     </footer>
   </div>
     {{ghost_foot}}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script src="{{asset '/js/main.js'}}"></script>
+    <script src="{{asset '/js/jquery.min.js'}}"></script>
+    <script src="{{asset '/js/jquery.justifiedGallery.min.js'}}"></script>
+    <script src="{{asset '/js/highlight.pack.js'}}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
