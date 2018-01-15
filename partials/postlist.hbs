@@ -1,5 +1,16 @@
-{{#foreach posts}}
-<section id="{{id}}" class="{{post_class}}">
-	<h3 class="post-title"><a href="{{url}}">{{title}}</a><span class="separator"> &middot; </span>{{date published_at format='MMMM D, YYYY'}}<span class="taglist">{{tags separator=" " prefix=" &middot; "}}</span>{{#if featured}}<span class="separator"> &middot; </span><i class="fa fa-star-o feature-star"></i>{{/if}}</h3>
-</section>
-{{/foreach}}
+<ul class="post-list">
+  {{#foreach posts}}
+  <li class="post-item">
+    <div class="meta">
+      <time datetime='{{date published_at format="DD-MM-YYYY"}}' itemprop="datePublished">
+        {{date published_at format='DD-MM-YYYY'}}
+      </time>
+    </div>
+
+    <span>
+      <a href="{{url}}">{{title}}</a>
+    </span>
+    <span class="taglist">{{tags separator=" " prefix=" &middot; "}}</span>
+  </li>
+  {{/foreach}}
+</ul>
